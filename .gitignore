@@ -1,0 +1,26 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+coverage/
+
+# Node / web
+node_modules/
+dist/
+
+# Env / logs
+.env
+.env.*
+*.log
+
+# Build artifacts
+*.cache
+*.tmp
+
