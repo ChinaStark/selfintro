@@ -1,6 +1,6 @@
 # selfintro — Personal Research Site
 
-Minimal, researcher‑style personal website for Zhiliang Long. Contains an HTML/CSS site with bilingual (EN/中文) toggle, sections for About, Interests, News, Awards, Publications, Projects, and Contact.
+Minimal, researcher‑style personal website for Zhiliang Long. Bilingual (EN/中文) with JSON‑driven content.
 
 ## Local Preview
 - Open `index.html` directly, or run: `python -m http.server -d . 8000` and visit `http://localhost:8000`.
@@ -9,15 +9,24 @@ Minimal, researcher‑style personal website for Zhiliang Long. Contains an HTML
 1. GitHub → Settings → Pages
 2. Source: `Deploy from a branch`
 3. Branch: `main` and Folder: `/ (root)`
-4. After a few minutes, the site is live at `https://chinastark.github.io/selfintro`
+4. After a few minutes: `https://chinastark.github.io/selfintro`
 
 ## Structure
-- `index.html` — main page (content + sections)
-- `css/main.css` — styling (supports dark mode)
-- `js/main.js` — language toggle and i18n strings
-- `assets/profile.jpg` — add your portrait here (optional)
+- `index.html` main page (renders sections)
+- `css/main.css` styling (supports dark mode)
+- `js/main.js` language toggle + fetch + render from JSON
+- `data/site.json` all editable content + i18n strings (EN/中文)
+- `assets/profile.jpg` add your portrait here (optional)
 
 ## Customize
-- Update About, interests, awards, projects, and links in `index.html` and `js/main.js` (i18n strings).
+- Edit `data/site.json` only. The site reads this JSON and renders sections (Interests, News, Awards, Publications, Projects) and applies i18n strings for headings, header name/tagline, About, and labels.
 - Replace `assets/profile.jpg` and add a CV PDF if desired.
+
+### JSON schema (summary)
+- `i18n.{en,zh}`: key‑value strings, e.g. `page.title`, `header.name`, `about.body`, `section.*`, `nav.*`, `contact.*`, `footer.updated`.
+- `content.interests`: array of `{ en, zh }` strings.
+- `content.news`: array of `{ date, en, zh }`.
+- `content.awards`: array of `{ title: { en, zh }, desc: { en, zh } }`.
+- `content.publications`: array of `{ title: { en, zh }, authors, venue: { en, zh }, links: { pdf?, doi?, code? } }`.
+- `content.projects`: array of `{ name, desc: { en, zh }, link }`.
 

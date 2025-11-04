@@ -98,109 +98,28 @@
 
       <section id="interests">
         <h2 data-i18n="section.interests">Research Interests</h2>
-        <ul class="compact">
-          <li data-i18n="interests.1">NL2SQL (Natural Language to SQL)</li>
-          <li data-i18n="interests.2">LLM reasoning and reliability</li>
-          <li data-i18n="interests.3">Hallucination detection and mitigation</li>
-          <li data-i18n="interests.4">Multi-agent systems</li>
-          <li data-i18n="interests.5">Model tuning (RL, SFT)</li>
-        </ul>
+        <ul class="compact" id="interests-list"></ul>
       </section>
 
       <section id="news">
         <h2 data-i18n="section.news">News</h2>
-        <ul class="news">
-          <li><span class="date">2025-MM</span> Started [Position/Project] at [Place].</li>
-          <li><span class="date">2024-MM</span> Our paper on [Topic] was accepted to [Venue].</li>
-          <li><span class="date">2024-MM</span> Joined [Lab/Group].</li>
-        </ul>
+        <ul class="news" id="news-list"></ul>
       </section>
 
       <section id="awards">
         <h2 data-i18n="section.awards">Awards</h2>
-        <ul class="awards">
-          <li>
-            <div class="award-title" data-i18n="awards.1.title"><strong>Bronze Medal</strong>, <em>ICPC Jiangxi Provincial Programming Contest</em> (2023)</div>
-            <div class="award-desc" data-i18n="awards.1.desc">Competed as team leader and won a provincial <strong>bronze medal</strong> for algorithmic problem-solving and teamwork excellence.</div>
-          </li>
-          <li>
-            <div class="award-title" data-i18n="awards.2.title"><strong>9th China Merchants Bank Digital Finance Bootcamp</strong> (2025)</div>
-            <div class="award-desc" data-i18n="awards.2.desc">Awarded a <strong>1888 RMB scholarship</strong> for excellence in LLM fine-tuning.</div>
-          </li>
-        </ul>
+        <ul class="awards" id="awards-list"></ul>
       </section>
 
       <section id="publications">
         <h2 data-i18n="section.publications">Publications</h2>
-        <ol class="pubs">
-          <li>
-            <div class="pub-title">[Paper Title]</div>
-            <div class="pub-authors">[Your Name], [Coauthor A], [Coauthor B]</div>
-            <div class="pub-venue">[Venue], [Year]</div>
-            <div class="pub-links">
-              <a href="#">PDF</a>
-              <span>·</span>
-              <a href="#">DOI</a>
-              <span>·</span>
-              <a href="#">Code</a>
-            </div>
-          </li>
-          <li>
-            <div class="pub-title">[Another Paper Title]</div>
-            <div class="pub-authors">[Your Name], [Coauthor ...]</div>
-            <div class="pub-venue">[Preprint/Workshop], [Year]</div>
-            <div class="pub-links"><a href="#">PDF</a></div>
-          </li>
-        </ol>
-        <!-- Tip: Put latest first. Copy a block above per paper. -->
+        <ol class="pubs" id="pubs-list"></ol>
+        <!-- Tip: Put latest first. Items rendered from data/site.json -->
       </section>
 
       <section id="projects">
         <h2 data-i18n="section.projects">Projects</h2>
-        <ul class="cards">
-          <li>
-            <div class="card">
-              <h3>Website</h3>
-              <p data-i18n="proj.website.desc">Static website templates and components.</p>
-              <p class="card-links"><a href="https://github.com/ChinaStark/Website" target="_blank" rel="noopener">Code</a></p>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <h3>sql_forbase</h3>
-              <p data-i18n="proj.sql_forbase.desc">Practice repository for SQL basics (CRUD).</p>
-              <p class="card-links"><a href="https://github.com/ChinaStark/sql_forbase" target="_blank" rel="noopener">Code</a></p>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <h3>utils_pkg</h3>
-              <p data-i18n="proj.utils_pkg.desc">Python utility package and reusable helpers.</p>
-              <p class="card-links"><a href="https://github.com/ChinaStark/utils_pkg" target="_blank" rel="noopener">Code</a></p>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <h3>operating-system_practice</h3>
-              <p data-i18n="proj.os_practice.desc">Notes and notebooks for OS coursework.</p>
-              <p class="card-links"><a href="https://github.com/ChinaStark/-operating-system_practice" target="_blank" rel="noopener">Code</a></p>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <h3>SaleSystem</h3>
-              <p data-i18n="proj.salesystem.desc">C++ MFC demo sales/inventory system.</p>
-              <p class="card-links"><a href="https://github.com/ChinaStark/SaleSystem" target="_blank" rel="noopener">Code</a></p>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <h3>Datastruct-practice</h3>
-              <p data-i18n="proj.datastruct.desc">Data structures exercises and implementations (C++).</p>
-              <p class="card-links"><a href="https://github.com/ChinaStark/Datastruct-practice" target="_blank" rel="noopener">Code</a></p>
-            </div>
-          </li>
-        </ul>
+        <ul class="cards" id="projects-list"></ul>
       </section>
 
       <section id="contact">
