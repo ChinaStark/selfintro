@@ -1,4 +1,4 @@
-// JSON-driven content and i18n (EN/中文)
+﻿// JSON-driven content and i18n (EN/涓枃)
 (function () {
   let SITE = null; // { i18n: { en, zh }, content: { ... } }
 
@@ -85,7 +85,7 @@
           if (!href) return;
           if (links.childElementCount > 0) {
             const sep = document.createElement('span');
-            sep.textContent = '·';
+            sep.textContent = ' | ';
             links.appendChild(sep);
           }
           const a = document.createElement('a');
@@ -161,6 +161,9 @@
 
     // Render dynamic sections from JSON
     renderContent(lang);
+
+    // Ensure avatar shows with robust fallbacks
+    setupAvatar();
   }
 
   async function init() {
@@ -174,11 +177,20 @@
       }
     }
 
-    try {
-      const resp = await fetch('data/site.json', { cache: 'no-store' });
-      SITE = await resp.json();
-    } catch (e) {
-      console.error('Failed to load data/site.json', e);
+    // Pure static: prefer global window.SITE object, else parse inline JSON
+    if (window.SITE && typeof window.SITE === 'object') {
+      SITE = window.SITE;
+    } else {
+      const inlineEl = document.getElementById('site-data');
+      if (inlineEl && inlineEl.textContent && inlineEl.textContent.trim().length > 0) {
+        try {
+          SITE = JSON.parse(inlineEl.textContent);
+        } catch (e) {
+          console.warn('Inline site-data JSON parse failed:', e);
+        }
+      }
+    }
+    if (!SITE) {
       SITE = { i18n: { en: {} }, content: {} };
     }
 
@@ -190,6 +202,26 @@
         applyLang(lang);
       });
     }
+  }
+
+  function setupAvatar() {
+    const el = document.querySelector('img.avatar');
+    if (!el || el.dataset.avatarSetup === '1') return;
+    el.dataset.avatarSetup = '1';
+    const localSrc = 'assets/profile.jpg';
+    const remoteSrc = 'https://avatars.githubusercontent.com/u/96754989?v=4';
+    const placeholder = 'data:image/svg+xml;utf8,' +
+      encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' width='256' height='256'><rect width='100%' height='100%' fill='#e5e7eb'/><circle cx='128' cy='96' r='64' fill='#cbd5e1'/><rect x='56' y='176' width='144' height='32' rx='16' fill='#cbd5e1'/></svg>");
+
+    function tryLoad(src, onFail) {
+      const img = new Image();
+      img.onload = () => { el.src = src; };
+      img.onerror = () => { if (typeof onFail === 'function') onFail(); else el.src = placeholder; };
+      img.src = src;
+    }
+
+    // Try local → remote → placeholder
+    tryLoad(localSrc, () => tryLoad(remoteSrc, () => { el.src = placeholder; }));
   }
 
   if (document.readyState === 'loading') {

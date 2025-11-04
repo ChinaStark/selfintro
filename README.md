@@ -1,4 +1,4 @@
-# selfintro — Personal Research Site
+﻿# selfintro — Personal Research Site
 
 Minimal, researcher‑style personal website for Zhiliang Long. Bilingual (EN/中文) with JSON‑driven content.
 
@@ -14,12 +14,12 @@ Minimal, researcher‑style personal website for Zhiliang Long. Bilingual (EN/�
 ## Structure
 - `index.html` main page (renders sections)
 - `css/main.css` styling (supports dark mode)
-- `js/main.js` language toggle + fetch + render from JSON
-- `data/site.json` all editable content + i18n strings (EN/中文)
+- `js/main.js` language toggle + render from JS data
+- `data/site.js` all editable content + i18n strings (EN/中文)
 - `assets/profile.jpg` add your portrait here (optional)
 
 ## Customize
-- Edit `data/site.json` only. The site reads this JSON and renders sections (Interests, News, Awards, Publications, Projects) and applies i18n strings for headings, header name/tagline, About, and labels.
+- Edit `data/site.js` only. The site reads this JSON and renders sections (Interests, News, Awards, Publications, Projects) and applies i18n strings for headings, header name/tagline, About, and labels.
 - Replace `assets/profile.jpg` and add a CV PDF if desired.
 
 ### JSON schema (summary)
@@ -29,4 +29,6 @@ Minimal, researcher‑style personal website for Zhiliang Long. Bilingual (EN/�
 - `content.awards`: array of `{ title: { en, zh }, desc: { en, zh } }`.
 - `content.publications`: array of `{ title: { en, zh }, authors, venue: { en, zh }, links: { pdf?, doi?, code? } }`.
 - `content.projects`: array of `{ name, desc: { en, zh }, link }`.
+
+
 

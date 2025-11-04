@@ -1,9 +1,9 @@
-{
+﻿{
   "i18n": {
     "en": {
       "page.title": "Zhiliang Long - Research",
       "header.name": "Zhiliang Long",
-      "header.tagline": "Master's Candidate · CSSE, Shenzhen University",
+      "header.tagline": "Master's Candidate - CSSE, Shenzhen University",
       "nav.about": "About",
       "nav.interests": "Interests",
       "nav.news": "News",
@@ -27,7 +27,7 @@
     "zh": {
       "page.title": "龙智亮 - 研究主页",
       "header.name": "龙智亮（Zhiliang Long）",
-      "header.tagline": "硕士研究生 · 深圳大学计算机与软件学院",
+      "header.tagline": "硕士研究生 - 深圳大学计算机与软件学院",
       "nav.about": "简介",
       "nav.interests": "研究兴趣",
       "nav.news": "动态",
@@ -58,7 +58,9 @@
       { "en": "Model tuning (RL, SFT)", "zh": "模型调优（RL、SFT）" }
     ],
     "news": [
-      { "date": "2025-10", "en": "Achieved a score of 1,922 on LeetCode, earned a Knight Model designation, and ranked in the top 6% nationally.", "zh": "在 LeetCode 上获得 1,922 分，获得“Knight”称号，并在全国排名前 6%." }
+      { "date": "2025-10", "en": "My first NL2SQL work was submitted to a CCF-A conference.", "zh": "自己的第一个NL2SQL的工作投在了 CCF-A类会议。" },
+      { "date": "2025-10", "en": "Achieved 1,922 points on LeetCode; Knight title; top 6% nationwide.", "zh": "在 LeetCode 上获得 1,922 分，获得 Knight 称号，位列全国前 6%。" }
+      
     ],
     "awards": [
       {

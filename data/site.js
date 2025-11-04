@@ -1,0 +1,99 @@
+﻿// Global site data for pure static usage (no fetch)
+window.SITE = {
+  i18n: {
+    en: {
+      "page.title": "Zhiliang Long - Research",
+      "header.name": "Zhiliang Long",
+      "header.tagline": "\uD83C\uDF93 \u7855\u58eb\u7814\u7A76\u751F - \u6DF1\u5733\u5927\u5B66\u8BA1\u7B97\u673A\u4E0E\u8F6F\u4EF6\u5B66\u9662",
+      "nav.about": "About",
+      "nav.interests": "Interests",
+      "nav.news": "News",
+      "nav.publications": "Publications",
+      "nav.awards": "Awards",
+      "nav.projects": "Projects",
+      "nav.contact": "Contact",
+      "section.about": "About",
+      "about.body": "Hi! I'm Zhiliang Long. I am a master's candidate at Shenzhen University (CSSE), advised by <a href='https://orcid.org/0000-0002-7252-5346' target='_blank' rel='noopener'>MARK JunJie Li</a>. I explore the intersection of natural language understanding and database reasoning, focusing on NL2SQL, LLM reasoning reliability, and multi-agent methods.",
+      "section.interests": "Research Interests",
+      "section.news": "News",
+      "section.publications": "Publications",
+      "section.projects": "Projects",
+      "section.awards": "Awards",
+      "section.contact": "Contact",
+      "contact.email": "Email:",
+      "contact.office": "Office:",
+      "contact.links": "Links:",
+      "footer.updated": "Last updated:"
+    },
+    zh: {
+      "page.title": "龙智亮 - 研究主页",
+      "header.name": "龙智亮（Zhiliang Long）",
+      "header.tagline": "\uD83C\uDF93 \u7855\u58eb\u7814\u7A76\u751F - \u6DF1\u5733\u5927\u5B66\u8BA1\u7B97\u673A\u4E0E\u8F6F\u4EF6\u5B66\u9662",
+      "nav.about": "简介",
+      "nav.interests": "研究兴趣",
+      "nav.news": "动态",
+      "nav.publications": "论文",
+      "nav.awards": "奖项",
+      "nav.projects": "项目",
+      "nav.contact": "联系",
+      "section.about": "简介",
+      "about.body": "你好！我是龙智亮（Zhiliang Long）。我是深圳大学（计算机与软件学院）的硕士研究生，导师为<a href='https://orcid.org/0000-0002-7252-5346' target='_blank' rel='noopener'>李俊杰（MARK JunJie Li）</a>。我的研究方向是自然语言理解与数据库推理的交叉，关注 NL2SQL、LLM 推理可靠性与多智能体方法。",
+      "section.interests": "研究兴趣",
+      "section.news": "动态",
+      "section.publications": "论文",
+      "section.projects": "项目",
+      "section.awards": "奖项",
+      "section.contact": "联系",
+      "contact.email": "邮箱：",
+      "contact.office": "办公室：",
+      "contact.links": "链接：",
+      "footer.updated": "最后更新："
+    }
+  },
+  content: {
+    interests: [
+      { en: "NL2SQL (Natural Language to SQL)", zh: "NL2SQL（自然语言转 SQL）" },
+      { en: "LLM reasoning and reliability", zh: "大模型推理与可靠性" },
+      { en: "Hallucination detection and mitigation", zh: "幻觉检测与缓解" },
+      { en: "Multi-agent systems", zh: "多智能体系统" },
+      { en: "Model tuning (RL, SFT)", zh: "模型调优（RL、SFT）" }
+    ],
+    news: [
+      { date: "2025-10", en: "My first NL2SQL work was submitted to a CCF-A conference.", zh: "自己的第一个NL2SQL的工作投在了 CCF-A类会议。" },
+      { date: "2025-10", en: "Achieved 1,922 points on LeetCode; Knight title; top 6% nationwide.", zh: "在 LeetCode 上获得 1,922 分，获得 Knight 称号，位列全国前 6%。" }
+    ],
+    awards: [
+      {
+        title: { en: "Bronze Medal, ICPC Jiangxi Provincial Programming Contest (2023)", zh: "ICPC 江西省程序设计竞赛 铜牌（2023）" },
+        desc: { en: "Competed as team leader and won a provincial bronze medal for algorithmic problem-solving and teamwork excellence.", zh: "作为队长参赛，因算法问题求解与团队协作表现获得省赛铜牌。" }
+      },
+      {
+        title: { en: "9th China Merchants Bank Digital Finance Bootcamp (2025)", zh: "第九届招商银行数字金融训练营（2025）" },
+        desc: { en: "Awarded a 1888 RMB scholarship for excellence in LLM fine-tuning.", zh: "因在大模型微调方面表现优异，获 1888 元奖学金。" }
+      }
+    ],
+    publications: [
+      {
+        title: { en: "[Paper Title]", zh: "[论文标题]" },
+        authors: "[Your Name], [Coauthor A], [Coauthor B]",
+        venue: { en: "[Venue], [Year]", zh: "[会议]，[年份]" },
+        links: { pdf: "#", doi: "#", code: "#" }
+      },
+      {
+        title: { en: "[Another Paper Title]", zh: "[另一篇论文标题]" },
+        authors: "[Your Name], [Coauthor ...]",
+        venue: { en: "[Preprint/Workshop], [Year]", zh: "[预印/研讨会]，[年份]" },
+        links: { pdf: "#" }
+      }
+    ],
+    projects: [
+      { name: "Website", desc: { en: "Static website templates and components.", zh: "静态网站模板与组件。" }, link: "https://github.com/ChinaStark/Website" },
+      { name: "sql_forbase", desc: { en: "Practice repository for SQL basics (CRUD).", zh: "SQL 基础练习（增删改查）。" }, link: "https://github.com/ChinaStark/sql_forbase" },
+      { name: "utils_pkg", desc: { en: "Python utility package and reusable helpers.", zh: "Python 工具包与可复用助手。" }, link: "https://github.com/ChinaStark/utils_pkg" },
+      { name: "operating-system_practice", desc: { en: "Notes and notebooks for OS coursework.", zh: "操作系统课程笔记与 Notebook。" }, link: "https://github.com/ChinaStark/-operating-system_practice" },
+      { name: "SaleSystem", desc: { en: "C++ MFC demo sales/inventory system.", zh: "C++ MFC 演示销售/库存系统。" }, link: "https://github.com/ChinaStark/SaleSystem" },
+      { name: "Datastruct-practice", desc: { en: "Data structures exercises and implementations (C++).", zh: "数据结构练习与实现（C++）。" }, link: "https://github.com/ChinaStark/Datastruct-practice" }
+    ]
+  }
+};
+
