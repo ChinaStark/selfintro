@@ -60,7 +60,7 @@ window.SITE = {
     ],
     news: [
       { date: "2025-10", en: "My first NL2SQL work was submitted to a CCF-A conference.", zh: "自己的第一个NL2SQL的工作投在了 CCF-A类会议。" },
-      { date: "2025-10", en: "Achieved 1,922 points on LeetCode; Knight title; top 6% nationwide.", zh: "在 LeetCode 上获得 1,922 分，获得 Knight 称号，位列全国前 6%。" }
+      { date: "2025-10", en: "Achieved 2,050 points on LeetCode; Knight title; top 6% nationwide.", zh: "在 LeetCode 上获得 2,050 分，获得 Knight 称号，位列全国前 6%。" }
     ],
     awards: [
       {
@@ -70,6 +70,10 @@ window.SITE = {
       {
         title: { en: "9th China Merchants Bank Digital Finance Bootcamp (2025)", zh: "第九届招商银行数字金融训练营（2025）" },
         desc: { en: "Awarded a 1888 RMB scholarship for excellence in LLM fine-tuning.", zh: "因在大模型微调方面表现优异，获 1888 元奖学金。" }
+      },
+      {
+        title: { en: "Second Prize, CACC Guangdong Division", zh: "CACC 二等奖（广东赛区）" },
+        desc: { en: "Won second prize in Guangdong and advanced to the final round.", zh: "在广东赛区获 CACC 二等奖，已入围并准备参加决赛。" }
       }
     ],
     publications: [
