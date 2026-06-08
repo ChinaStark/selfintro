@@ -78,16 +78,17 @@
     ],
     "publications": [
       {
-        "title": { "en": "[Paper Title]", "zh": "[论文标题]" },
-        "authors": "[Your Name], [Coauthor A], [Coauthor B]",
-        "venue": { "en": "[Venue], [Year]", "zh": "[会议]，[年份]" },
-        "links": { "pdf": "#", "doi": "#", "code": "#" }
-      },
-      {
-        "title": { "en": "[Another Paper Title]", "zh": "[另一篇论文标题]" },
-        "authors": "[Your Name], [Coauthor ...]",
-        "venue": { "en": "[Preprint/Workshop], [Year]", "zh": "[预印/研讨会]，[年份]" },
-        "links": { "pdf": "#" }
+        "title": {
+          "en": "SWE-TRACE: Optimizing Long-Horizon SWE Agents Through Rubric Process Reward Models and Heuristic Test-Time Scaling",
+          "zh": "SWE-TRACE：通过规则过程奖励模型与启发式测试时扩展优化长程 SWE 智能体"
+        },
+        "authors": "Hao Han, Jin Xie, Xuehao Ma, Weiquan Zhu, Ziyao Zhang, ZhiLiang Long, Hongkai Chen, Qingwen Ye",
+        "highlightAuthor": "ZhiLiang Long",
+        "venue": { "en": "arXiv preprint, 2026", "zh": "arXiv 预印本，2026" },
+        "links": {
+          "pdf": "https://arxiv.org/pdf/2604.14820",
+          "doi": "https://doi.org/10.48550/arXiv.2604.14820"
+        }
       }
     ],
     "projects": [

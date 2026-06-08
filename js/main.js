@@ -16,6 +16,22 @@
     return '';
   }
 
+  function escapeHtml(text) {
+    return String(text)
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#39;');
+  }
+
+  function renderAuthors(authors, highlightAuthor) {
+    const safeAuthors = escapeHtml(authors || '');
+    if (!highlightAuthor) return safeAuthors;
+    const safeHighlight = escapeHtml(highlightAuthor);
+    return safeAuthors.replaceAll(safeHighlight, `<strong>${safeHighlight}</strong>`);
+  }
+
   function renderContent(lang) {
     if (!SITE || !SITE.content) return;
     const content = SITE.content;
@@ -75,7 +91,7 @@
         title.textContent = t(p.title, lang);
         const authors = document.createElement('div');
         authors.className = 'pub-authors';
-        authors.textContent = p.authors || '';
+        authors.innerHTML = renderAuthors(p.authors, p.highlightAuthor);
         const venue = document.createElement('div');
         venue.className = 'pub-venue';
         venue.textContent = t(p.venue, lang);

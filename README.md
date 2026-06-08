@@ -27,7 +27,7 @@ Minimal, researcherâ€‘style personal website for Zhiliang Long. Bilingual (EN/ä¸
 - `content.interests`: array of `{ en, zh }` strings.
 - `content.news`: array of `{ date, en, zh }`.
 - `content.awards`: array of `{ title: { en, zh }, desc: { en, zh } }`.
-- `content.publications`: array of `{ title: { en, zh }, authors, venue: { en, zh }, links: { pdf?, doi?, code? } }`.
+- `content.publications`: array of `{ title: { en, zh }, authors, highlightAuthor?, venue: { en, zh }, links: { pdf?, doi?, code? } }`.
 - `content.projects`: array of `{ name, desc: { en, zh }, link }`.
 
 
