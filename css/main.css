@@ -89,6 +89,22 @@ ul.news li { padding: 6px 0; }
 .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 12px 14px; }
 .card h3 { margin: 0 0 6px; font-size: 18px; }
 .card p { margin: 8px 0; }
+.internship-company {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.internship-company img {
+  box-sizing: border-box;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
 .card-links a { color: var(--brand); text-decoration: none; }
 .card-links a:hover, .card-links a:focus-visible { text-decoration: underline; outline: none; }
 

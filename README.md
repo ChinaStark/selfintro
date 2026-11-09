@@ -26,7 +26,7 @@ Minimal, researcher‑style personal website for Zhiliang Long. Bilingual (EN/�
 - `i18n.{en,zh}`: key‑value strings, e.g. `page.title`, `header.name`, `about.body`, `section.*`, `nav.*`, `contact.*`, `footer.updated`.
 - `content.interests`: array of `{ en, zh }` strings.
 - `content.news`: array of `{ date, en, zh }`.
-- `content.internships`: array of `{ company, period, role, desc }`, each with `{ en, zh }`.
+- `content.internships`: array of `{ company, period, role, desc }`, each with `{ en, zh }`, plus an optional `logo` image path.
 - `content.awards`: array of `{ title: { en, zh }, desc: { en, zh } }`.
 - `content.publications`: array of `{ title: { en, zh }, authors, highlightAuthor?, venue: { en, zh }, links: { pdf?, doi?, code? } }`.
 - `content.projects`: array of `{ name, desc: { en, zh }, link }`.

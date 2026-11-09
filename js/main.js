@@ -70,7 +70,14 @@
         const card = document.createElement('li');
         card.className = 'card';
         const company = document.createElement('h3');
-        company.textContent = t(internship.company, lang);
+        company.className = 'internship-company';
+        if (internship.logo) {
+          const logo = document.createElement('img');
+          logo.src = internship.logo;
+          logo.alt = '';
+          company.appendChild(logo);
+        }
+        company.append(t(internship.company, lang));
         const period = document.createElement('p');
         period.textContent = t(internship.period, lang);
         const role = document.createElement('strong');

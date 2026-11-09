@@ -63,11 +63,15 @@ window.SITE = {
       { en: "Model tuning (RL, SFT)", zh: "模型调优（RL、SFT）" }
     ],
     news: [
+      { "date": "2026-07", "en": "Started an internship at Huawei.", "zh": "入职华为实习。" },
+      { "date": "2026-04", "en": "Started an internship on the Douyin R&D team at ByteDance.", "zh": "入职字节跳动抖音研发团队实习。" },
+      { "date": "2026-02", "en": "Started an internship at vivo.", "zh": "入职 vivo 实习。" },
       { date: "2025-10", en: "My first NL2SQL work was submitted to a CCF-A conference.", zh: "自己的第一个NL2SQL的工作投在了 CCF-A类会议。" },
       { date: "2025-10", en: "Achieved 2,050 points on LeetCode; Knight title; top 6% nationwide.", zh: "在 LeetCode 上获得 2,050 分，获得 Knight 称号，位列全国前 6%。" }
     ],
     internships: [
       {
+        "logo": "assets/internships/huawei.png",
         "company": {
           "en": "Huawei",
           "zh": "华为"
@@ -86,6 +90,7 @@ window.SITE = {
         }
       },
       {
+        "logo": "assets/internships/bytedance.png",
         "company": {
           "en": "ByteDance",
           "zh": "字节跳动"
@@ -104,6 +109,7 @@ window.SITE = {
         }
       },
       {
+        "logo": "assets/internships/vivo.png",
         "company": {
           "en": "vivo",
           "zh": "vivo"
