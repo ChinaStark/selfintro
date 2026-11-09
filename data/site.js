@@ -9,6 +9,7 @@ window.SITE = {
       "nav.interests": "Interests",
       "nav.news": "News",
       "nav.publications": "Publications",
+      "nav.internships": "Internships",
       "nav.awards": "Awards",
       "nav.projects": "Projects",
       "nav.contact": "Contact",
@@ -18,6 +19,7 @@ window.SITE = {
       "section.news": "News",
       "section.publications": "Publications",
       "section.projects": "Projects",
+      "section.internships": "Internship Experience",
       "section.awards": "Awards",
       "section.contact": "Contact",
       "contact.email": "Email:",
@@ -33,6 +35,7 @@ window.SITE = {
       "nav.interests": "研究兴趣",
       "nav.news": "动态",
       "nav.publications": "论文",
+      "nav.internships": "实习",
       "nav.awards": "奖项",
       "nav.projects": "项目",
       "nav.contact": "联系",
@@ -42,6 +45,7 @@ window.SITE = {
       "section.news": "动态",
       "section.publications": "论文",
       "section.projects": "项目",
+      "section.internships": "实习经历",
       "section.awards": "奖项",
       "section.contact": "联系",
       "contact.email": "邮箱：",
@@ -61,6 +65,62 @@ window.SITE = {
     news: [
       { date: "2025-10", en: "My first NL2SQL work was submitted to a CCF-A conference.", zh: "自己的第一个NL2SQL的工作投在了 CCF-A类会议。" },
       { date: "2025-10", en: "Achieved 2,050 points on LeetCode; Knight title; top 6% nationwide.", zh: "在 LeetCode 上获得 2,050 分，获得 Knight 称号，位列全国前 6%。" }
+    ],
+    internships: [
+      {
+        "company": {
+          "en": "Huawei",
+          "zh": "华为"
+        },
+        "period": {
+          "en": "Jul 2026 – Present",
+          "zh": "2026 年 7 月至今"
+        },
+        "role": {
+          "en": "Enterprise Knowledge QA",
+          "zh": "企业知识问答 Agent"
+        },
+        "desc": {
+          "en": "Improved answer generation and tool use for an enterprise knowledge assistant through on-policy distillation and evaluation of retrieval, citations, and tool calls.",
+          "zh": "参与企业知识问答 Agent 的优化，使用在策略蒸馏（OPD）改进答案生成，并评估检索、引用与工具调用。"
+        }
+      },
+      {
+        "company": {
+          "en": "ByteDance",
+          "zh": "字节跳动"
+        },
+        "period": {
+          "en": "Apr – Jul 2026",
+          "zh": "2026 年 4 月至 7 月"
+        },
+        "role": {
+          "en": "Douyin R&D · Code Fix Agent",
+          "zh": "抖音研发 · 代码修复 Agent"
+        },
+        "desc": {
+          "en": "Built an agent that reproduces bugs, generates patches, and verifies fixes through builds, unit tests, and CI checks.",
+          "zh": "构建代码修复 Agent，串联缺陷复现、补丁生成、编译、单元测试与 CI 验证。"
+        }
+      },
+      {
+        "company": {
+          "en": "vivo",
+          "zh": "vivo"
+        },
+        "period": {
+          "en": "Feb – Apr 2026",
+          "zh": "2026 年 2 月至 4 月"
+        },
+        "role": {
+          "en": "SWE Agent Optimization",
+          "zh": "SWE Agent 优化"
+        },
+        "desc": {
+          "en": "Optimized small models for software engineering tasks through trajectory synthesis, supervised fine-tuning, reinforcement learning, and test-time search.",
+          "zh": "通过轨迹合成、监督微调、强化学习和推理时搜索，优化小模型在软件工程任务上的表现。"
+        }
+      }
     ],
     awards: [
       {

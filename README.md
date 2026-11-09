@@ -19,13 +19,14 @@ Minimal, researcher‑style personal website for Zhiliang Long. Bilingual (EN/�
 - `assets/profile.jpg` add your portrait here (optional)
 
 ## Customize
-- Edit `data/site.js` only. The site reads this JSON and renders sections (Interests, News, Awards, Publications, Projects) and applies i18n strings for headings, header name/tagline, About, and labels.
+- Edit `data/site.js` only. The site reads this JSON and renders sections (Interests, News, Internships, Awards, Publications, Projects) and applies i18n strings for headings, header name/tagline, About, and labels.
 - Replace `assets/profile.jpg` and add a CV PDF if desired.
 
 ### JSON schema (summary)
 - `i18n.{en,zh}`: key‑value strings, e.g. `page.title`, `header.name`, `about.body`, `section.*`, `nav.*`, `contact.*`, `footer.updated`.
 - `content.interests`: array of `{ en, zh }` strings.
 - `content.news`: array of `{ date, en, zh }`.
+- `content.internships`: array of `{ company, period, role, desc }`, each with `{ en, zh }`.
 - `content.awards`: array of `{ title: { en, zh }, desc: { en, zh } }`.
 - `content.publications`: array of `{ title: { en, zh }, authors, highlightAuthor?, venue: { en, zh }, links: { pdf?, doi?, code? } }`.
 - `content.projects`: array of `{ name, desc: { en, zh }, link }`.

@@ -62,6 +62,26 @@
       });
     }
 
+    // Internships
+    const internshipsEl = document.getElementById('internships-list');
+    if (internshipsEl && Array.isArray(content.internships)) {
+      internshipsEl.replaceChildren();
+      content.internships.forEach(internship => {
+        const card = document.createElement('li');
+        card.className = 'card';
+        const company = document.createElement('h3');
+        company.textContent = t(internship.company, lang);
+        const period = document.createElement('p');
+        period.textContent = t(internship.period, lang);
+        const role = document.createElement('strong');
+        role.textContent = t(internship.role, lang);
+        const desc = document.createElement('p');
+        desc.textContent = t(internship.desc, lang);
+        card.append(company, period, role, desc);
+        internshipsEl.appendChild(card);
+      });
+    }
+
     // Awards
     const awardsEl = document.getElementById('awards-list');
     if (awardsEl && Array.isArray(content.awards)) {
